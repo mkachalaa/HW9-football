@@ -1,4 +1,18 @@
+@import "/Normalize/normalize.css";
+
+// === MIXIN === //
+@mixin font-lato {
+  font-family: "Lato", sans-serif;
+}
+@mixin product-sans {
+  font-family: "Product Sans";
+}
+
+// === / MIXIN === //
 body {
-    padding: 100px;
-    display: inline;
+}
+.text {
+  h1 {
+    font-size: 20px;
+  }
 }
