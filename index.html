@@ -5,34 +5,142 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="css/">
+  <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="fons/fons.css" />
 </head>
 
 <body>
-  <div class="header">
-    <h1>TEXT</h1>
-  </div>
 
 
   <!--- header --->
   <section class="header section-header">
     <div class="section-inner">
-      <div class="section-header-logo">Sports</div>
+
+      <div class="section-header-logo">
+        <img src="img/icon/logo.svg" alt="">
+        <h1 class="section-header-logo__title">Sports</h1>
+
+      </div>
       <div class="section-header-content">
         <h2 class="section-header-content__title">Get a personalized football experience tailored just for you</h2>
         <p class="section-header-content__subtitle">Achieve super-fan status by getting tailored updates and
           up-to-the-minute information on your team.</p>
       </div>
-      <div class="section-header-content__img">
-        <img src="" alt="" class="section-header-content__img-store">
-        <img src="" alt="" class="section-header-content__img-store">
+      <div class="section-header-button">
+        <!-- <button onclick="document.location='#'">apple</button> -->
+        <img src="img/apple.png" alt="" class="section-header-button__img">
+        <img src="img/gogle.png" alt="">
       </div>
     </div>
+    <div class="section-bg">
+      <img src="img/bg-top.png">
+    </div>
+
+
+
+
   </section>
   <!--- / header--->
+  <!--- main --->
+  <section class="main-video ">
+    <div class="main-content">
+      <div class="main-content-top">
+        <div class="main-content-top__text">
+          <div class="main-content-top__text-first">
+            <p class="main-content-top__text-first_data">Sat, 12:35pm</p>
+            <p class="main-content-top__text-first_club">Arsenal v
+              Chelsea</p>
+            <p class="main-content-top__text-first_mat">Friendly Match</p>
+          </div>
+          <div class="main-content-top__icon">
+            <img src="img/arsel.svg" class="main-content-top__icon-chelsea" alt="">
+            <img src="img/schelse.svg" class="main-content-top__icon-arsenal" alt="">
+          </div>
+        </div>
+        <div class="main-content-bot">
+          <p>Turn on all match notifications</p>
+          <div class="main-content-bot_box">
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
 
+      </div>
+      <img src="img/video.png" class="main-content-hide" alt="">
+    </div>
+    <div class="main-content-wrapper">
+      <div class="main-content-wrapper__title">
+        <h6 class="main-content-wrapper__title-top">WHAT IT DOES</h6>
+        <h2 class="main-content-wrapper__title-main">An Enhanced Football Experience</h2>
+      </div>
+      <div class="main-content-wrapper__subtitle">
+        <p>The Guardian Live Scores app is your go to app for live scores and
+          watching Premier League goals… Get in
+          there, what a result!</p>
+        <p>As well as videos of all the goals, you can watch match highlights, check out the latest scores and
+          results
+          and stay bang-up-to-date with the big football stories from The Guardian publication.</p>
+      </div>
+      <a href="#" class="Learn-more">Learn more</a>
+    </div>
+
+  </section>
+  <!--- / main --->
+  <!--GET STARTED-->
+  <section class="main-started main-content">
+    <div class="main-content">
+      <div class="main-content-wrapper">
+        <h6 class="main-content-wrapper__title">GET STARTED</h6>
+        <h2 class="main-content-wrapper__titles">User-friendly Interface</h2>
+      </div>
+      <div class="main-content-wrapper__subtitle">
+        <p>The in-game goal clips from every Premier League match are available to Guardian TV customers with a Guardian
+          subscription.</p>
+        <p>So, if you’re not a subscriber, now’s the time to make that savvy call. If that’s a step too far for you, you
+          can still watch loads of firecracker Premier League action as long as you sign in with a free Guardian iD..
+        </p>
+      </div>
+      <a href="#" class="Learn-more">Learn more</a>
+    </div>
+    <div class="phone">
+
+      <img sizes="(max-width: 353px) 100vw, 353px" srcset="
+    /img/phone/phone_tawejb_c_scale,w_200.png 200w,
+    /img/phone/phone_tawejb_c_scale,w_230.png 230w,
+    /img/phone/phone_tawejb_c_scale,w_258.png 258w,
+    /img/phone/phone_tawejb_c_scale,w_282.png 282w,
+    /img/phone/phone_tawejb_c_scale,w_353.png 353w" src="/img/phone/phone_tawejb_c_scale,w_353.png" alt=""
+        class="phone-img">
+
+    </div>
+
+
+  </section>
+  <!-- / GET STARTED-->
+
+  <!--Features-->
+
+  <section class="features">
+    <div class="features-title">Features That Will Tailor Your Experience</div>
+    <div class="features-block">
+      <div class="feature-block__icon">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M35.0003 5H5.00033C3.15033 5 1.66699 6.48333 1.66699 8.33333V28.3333C1.66699 30.1667 3.15033 31.6667 5.00033 31.6667H13.3337V35H26.667V31.6667H35.0003C36.8337 31.6667 38.317 30.1667 38.317 28.3333L38.3337 8.33333C38.3337 6.48333 36.8337 5 35.0003 5ZM35.0003 28.3333H5.00033V8.33333H35.0003V28.3333ZM26.667 18.3333L15.0003 25V11.6667L26.667 18.3333Z"
+            fill="white" />
+        </svg>
+
+      </div>
+      <div class="feature-block__text">
+        <p>• Video highlights for every Premier League and English Football League game</p>
+      </div>
+
+    </div>
+  </section>
+  <!--/ Features-->
 
 
 
