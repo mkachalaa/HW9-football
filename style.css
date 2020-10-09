@@ -1,16 +1,17 @@
 @import url(/Normalize/normalize.css);
 body {
+  padding: 0;
+  margin: 0;
+}
+
+main {
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
-  padding: 0;
 }
 
 .section-header {
-  max-width: 1440px;
-  width: 100%;
-  height: 100vh;
-  position: relative;
+  min-height: 100vh;
   background-color: #f4f6f9;
   display: flex;
   position: relative;
@@ -40,7 +41,7 @@ body {
 }
 .section-header .section-inner-content__title,
 .section-header .section-header-content__title {
-  width: 120%;
+  max-width: 120%;
   font-family: "Product Sans";
   font-weight: bold;
   font-size: 36px;
@@ -69,13 +70,46 @@ body {
   max-width: 100%;
 }
 @media (max-width: 767px) {
+  .section-header .section-inner,
+  .section-header .section-header {
+    width: 100%;
+    min-height: 525px;
+    margin: 0;
+    padding: 32px 20px 59px 20px;
+  }
+  .section-header .section-inner-logo,
+  .section-header .section-header-logo {
+    justify-content: center;
+    padding: 0;
+  }
+  .section-header .section-inner-content,
+  .section-header .section-header-content {
+    text-align: center;
+  }
+  .section-header .section-inner-content__title,
+  .section-header .section-header-content__title {
+    font-size: 30px;
+  }
+  .section-header .section-inner-content p,
+  .section-header .section-header-content p {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .section-header .section-inner-button,
+  .section-header .section-header-button {
+    text-align: center;
+  }
+  .section-header .section-inner-button__img,
+  .section-header .section-header-button__img {
+    padding: 0;
+  }
   .section-header .section-bg {
     display: none;
   }
 }
 
 .main-video {
-  height: 592px;
+  min-height: 592px;
   width: 100%;
   background: linear-gradient(270deg, #ffffff 5.16%, rgba(255, 255, 255, 0) 67.14%), url(/img/basket.png) -2% 50% no-repeat;
   background-size: 50% 100%;
@@ -230,7 +264,7 @@ body {
 
 .main-started {
   background-image: url(/img/bg-phone.svg);
-  height: 100vh;
+  min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -400,7 +434,7 @@ body {
 
 .partner {
   width: 100%;
-  height: 278px;
+  min-height: 278px;
   background: #fafafa;
 }
 .partner-title {

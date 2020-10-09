@@ -9,7 +9,7 @@
 // === / MIXIN === //
 
 // === / Variables=== //
-$screen-sm: 576px;
+$screen-sm: 568px;
 $screen-md: 768px;
 $screen-lg: 992px;
 $screen-xl: 1200px;
@@ -21,16 +21,18 @@ $screen-lg-max: 1199px;
 // === / Variables === //
 
 body {
+  padding: 0;
+  margin: 0;
+}
+
+main {
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
-  padding: 0;
 }
+
 .section-header {
-  max-width: 1440px;
-  width: 100%;
-  height: 100vh;
-  position: relative;
+  min-height: 100vh;
   background-color: #f4f6f9;
   display: flex;
   position: relative;
@@ -54,7 +56,7 @@ body {
     &-content {
       padding-top: 80px;
       &__title {
-        width: 120%;
+        max-width: 120%;
         @include product-sans;
         font-weight: bold;
         font-size: 36px;
@@ -85,21 +87,43 @@ body {
   }
 
   @media (max-width: $screen-sm-max) {
+    .section-inner,
+    .section-header {
+      width: 100%;
+      min-height: 525px;
+      margin: 0;
+      padding: 32px 20px 59px 20px;
+
+      &-logo {
+        justify-content: center;
+        padding: 0;
+      }
+      &-content {
+        text-align: center;
+        &__title {
+          font-size: 30px;
+        }
+        p {
+          padding-top: 30px;
+          padding-bottom: 30px;
+        }
+      }
+      &-button {
+        text-align: center;
+        &__img {
+          padding: 0;
+        }
+      }
+    }
+
     .section-bg {
       display: none;
     }
-    .header {
-    }
-
-    // .section-header {
-    //   &-logo {
-    //   }
-    // }
   }
 }
 
 .main-video {
-  height: 592px;
+  min-height: 592px;
   width: 100%;
   background: linear-gradient(270deg, #ffffff 5.16%, rgba(255, 255, 255, 0) 67.14%),
     url(/img/basket.png) -2% 50% no-repeat;
@@ -268,7 +292,7 @@ body {
 }
 .main-started {
   background-image: url(/img/bg-phone.svg);
-  height: 100vh;
+  min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -449,7 +473,7 @@ body {
 
 .partner {
   width: 100%;
-  height: 278px;
+  min-height: 278px;
   background: #fafafa;
   &-title {
     padding-top: 50px;
