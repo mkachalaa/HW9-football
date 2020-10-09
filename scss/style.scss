@@ -441,8 +441,34 @@ main {
       padding: 0;
       margin: 0;
       width: 100%;
+      padding-bottom: 50px;
       &-wrapper {
-        width: 100%;
+      }
+      &-wrapper_subtitle {
+        p {
+          margin-left: 10px;
+        }
+      }
+    }
+    .phone {
+      margin-top: 50px;
+      width: 100%;
+      background-image: url(/img/icon/bg-phone.svg);
+      &:before {
+        content: url(/img/phone/1.svg);
+        position: absolute;
+        top: 7%;
+        left: 4%;
+      }
+      &-img {
+        padding: 0;
+        max-width: 90%;
+      }
+      &::after {
+        content: url(/img/phone/2.svg);
+        position: absolute;
+        bottom: 21%;
+        left: 70%;
       }
     }
   }
