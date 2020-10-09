@@ -8,15 +8,32 @@
 }
 // === / MIXIN === //
 
+// === / Variables=== //
+$screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+
+$screen-sm-max: 767px;
+$screen-md-max: 911px;
+$screen-lg-max: 1199px;
+
+// === / Variables === //
+
 body {
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
+  padding: 0;
 }
 .section-header {
+  max-width: 1440px;
+  width: 100%;
   height: 100vh;
+  position: relative;
   background-color: #f4f6f9;
   display: flex;
+  position: relative;
   .section-inner,
   .section-header {
     width: 40%;
@@ -59,20 +76,28 @@ body {
       &__img {
         padding-right: 15px;
       }
-      // button {
-      //   border: none;
-      //   outline: none;
-      //   color: #ffffff;
-      //   padding: 12px 32px 12px 34px;
-      //   border-radius: 8px;
-      //   cursor: pointer;
-      //   background: #000000;
-      //   border-radius: 7.33503px;
-      //   margin-right: 35px;
-      // }
     }
   }
+  .section-bg {
+    &-view {
+      max-width: 100%;
+    }
+  }
+
+  @media (max-width: $screen-sm-max) {
+    .section-bg {
+      display: none;
+    }
+    .header {
+    }
+
+    // .section-header {
+    //   &-logo {
+    //   }
+    // }
+  }
 }
+
 .main-video {
   height: 592px;
   width: 100%;
@@ -330,7 +355,7 @@ body {
     &-block {
       margin-top: 54px;
       width: 25%;
-      padding-right: 80px;
+      margin-right: 8%;
       &-icon {
       }
       &-text {
@@ -428,6 +453,7 @@ body {
   background: #fafafa;
   &-title {
     padding-top: 50px;
+    padding-bottom: 50px;
     text-align: center;
     @include font-lato;
     font-weight: bold;
@@ -436,24 +462,25 @@ body {
     color: #333333;
   }
   &-icon {
-    margin-left: 11%;
-    margin-top: 71px;
-    width: 1081px;
-    height: 58px;
+    width: 80%;
     display: flex;
-    &-logo {
-      padding-right: 73px;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+
+    .partner-icon-logo:last-child {
+      padding: 0;
     }
   }
 }
 
 .footer-download {
   background-color: white;
-  max-height: 483px;
+  min-height: 483px;
   display: flex;
   &-bg {
-    width: 50%;
-    height: 483px;
+    height: 100%;
+    width: 100%;
   }
   .footer-content {
     width: 50%;
@@ -487,12 +514,47 @@ body {
 
 .footer {
   background: #00adee;
+  height: 127px;
+
   .footer-block {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
     &-logo {
+      display: flex;
+      &__title {
+        padding-left: 3px;
+        @include product-sans;
+        font-size: 24px;
+        line-height: 29px;
+        letter-spacing: -0.02em;
+        color: #ffffff;
+      }
     }
     &-menu {
+      &_text {
+        padding-right: 37px;
+      }
+      a {
+        @include font-lato;
+        font-weight: 700;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 21px;
+        color: #ffffff;
+        text-decoration: none;
+      }
     }
     &-icon {
+      &-img {
+        padding-right: 17px;
+      }
     }
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .section-header {
   }
 }

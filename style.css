@@ -3,12 +3,17 @@ body {
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
+  padding: 0;
 }
 
 .section-header {
+  max-width: 1440px;
+  width: 100%;
   height: 100vh;
+  position: relative;
   background-color: #f4f6f9;
   display: flex;
+  position: relative;
 }
 .section-header .section-inner,
 .section-header .section-header {
@@ -59,6 +64,14 @@ body {
 .section-header .section-inner-button__img,
 .section-header .section-header-button__img {
   padding-right: 15px;
+}
+.section-header .section-bg-view {
+  max-width: 100%;
+}
+@media (max-width: 767px) {
+  .section-header .section-bg {
+    display: none;
+  }
 }
 
 .main-video {
@@ -303,7 +316,7 @@ body {
 .features-box-block {
   margin-top: 54px;
   width: 25%;
-  padding-right: 80px;
+  margin-right: 8%;
 }
 .features-box-block-text p {
   font-family: "Lato", sans-serif;
@@ -392,6 +405,7 @@ body {
 }
 .partner-title {
   padding-top: 50px;
+  padding-bottom: 50px;
   text-align: center;
   font-family: "Lato", sans-serif;
   font-weight: bold;
@@ -400,24 +414,24 @@ body {
   color: #333333;
 }
 .partner-icon {
-  margin-left: 11%;
-  margin-top: 71px;
-  width: 1081px;
-  height: 58px;
+  width: 80%;
   display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
 }
-.partner-icon-logo {
-  padding-right: 73px;
+.partner-icon .partner-icon-logo:last-child {
+  padding: 0;
 }
 
 .footer-download {
   background-color: white;
-  max-height: 483px;
+  min-height: 483px;
   display: flex;
 }
 .footer-download-bg {
-  width: 50%;
-  height: 483px;
+  height: 100%;
+  width: 100%;
 }
 .footer-download .footer-content {
   width: 50%;
@@ -448,4 +462,37 @@ body {
 
 .footer {
   background: #00adee;
+  height: 127px;
+}
+.footer .footer-block {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+.footer .footer-block-logo {
+  display: flex;
+}
+.footer .footer-block-logo__title {
+  padding-left: 3px;
+  font-family: "Product Sans";
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+.footer .footer-block-menu_text {
+  padding-right: 37px;
+}
+.footer .footer-block-menu a {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+  text-decoration: none;
+}
+.footer .footer-block-icon-img {
+  padding-right: 17px;
 }
