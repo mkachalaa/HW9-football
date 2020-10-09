@@ -110,7 +110,7 @@ main {
 .main-video {
   min-height: 592px;
   width: 100%;
-  background: linear-gradient(270deg, #ffffff 5.16%, rgba(255, 255, 255, 0) 67.14%), url(/img/bg-video.png) -2% 50% no-repeat;
+  background: linear-gradient(270deg, #ffffff 5.16%, rgba(255, 255, 255, 0) 67.14%), url(./img/bg-video.png) -2% 50% no-repeat;
   background-size: 50% 100%;
   display: flex;
 }
@@ -271,7 +271,7 @@ main {
   .main-video .main-content {
     width: 100%;
     min-height: 360px;
-    background: linear-gradient(270deg, #ffffff 5.16%, rgba(255, 255, 255, 0) 67.14%), url(/img/phone/basket.jpg) 0% 50% no-repeat;
+    background: linear-gradient(270deg, #ffffff 5.16%, rgba(255, 255, 255, 0) 67.14%), url(./img/phone/basket.jpg) 0% 50% no-repeat;
     background-size: 80% 100%;
     margin: 0;
   }
@@ -327,7 +327,7 @@ main {
   }
 }
 .main-started {
-  background-image: url(/img/bg-phone.svg);
+  background-image: url(./img/bg-phone.svg);
   min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -374,7 +374,7 @@ main {
   position: relative;
 }
 .main-started .phone::before {
-  content: url(/img/icon/phone.svg);
+  content: url(./img/icon/phone.svg);
   position: absolute;
   top: 15%;
   left: 25%;
@@ -383,7 +383,7 @@ main {
   padding: 9% 0 0 23%;
 }
 .main-started .phone::after {
-  content: url(/img/icon/phone1.svg);
+  content: url(./img/icon/phone1.svg);
   position: absolute;
   bottom: 25%;
   left: 60%;
@@ -406,10 +406,10 @@ main {
   .main-started .phone {
     margin-top: 50px;
     width: 99%;
-    background-image: url(/img/icon/bg-phone.svg);
+    background-image: url(./img/icon/bg-phone.svg);
   }
   .main-started .phone:before {
-    content: url(/img/phone/1.svg);
+    content: url(./img/phone/1.svg);
     position: absolute;
     top: 7%;
     left: 4%;
@@ -419,7 +419,7 @@ main {
     max-width: 90%;
   }
   .main-started .phone::after {
-    content: url(/img/phone/2.svg);
+    content: url(./img/phone/2.svg);
     position: absolute;
     bottom: 21%;
     left: 70%;
@@ -547,7 +547,7 @@ main {
 .comment-box_block-text::before,
 .comment-box .comment-box_block1-text::before,
 .comment-box .comment-box_block3-text::before {
-  content: url(/img/icon/coment/99.svg);
+  content: url(./img/icon/coment/99.svg);
   position: absolute;
   left: 7%;
 }
@@ -563,7 +563,7 @@ main {
   margin: 0;
 }
 .comment-box::after {
-  content: url(/img/icon/coment/89.png);
+  content: url(./img/icon/coment/89.png);
   position: absolute;
   right: 13%;
   margin-top: 4%;
