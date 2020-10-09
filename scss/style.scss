@@ -290,6 +290,82 @@ main {
     }
   }
 }
+@media (max-width: $screen-sm-max) {
+  .main-video {
+    align-items: center;
+    flex-direction: column;
+    background-image: none;
+
+    .main-content {
+      width: 100%;
+      min-height: 360px;
+      background: linear-gradient(270deg, #ffffff 5.16%, rgba(255, 255, 255, 0) 67.14%),
+        url(/img/basket.png) 0% 50% no-repeat;
+      background-size: 80% 100%;
+      margin: 0;
+      &-top {
+        width: 247.21px;
+        height: 120px;
+        margin-left: 20px;
+        &__text {
+          &-first {
+            &_data {
+              font-size: 11px;
+              line-height: 15px;
+            }
+            &_club {
+              font-weight: 500;
+              font-size: 12.3539px;
+              line-height: 16px;
+            }
+            &_mat {
+              font-size: 10.9812px;
+              line-height: 14px;
+            }
+          }
+        }
+
+        &__icon {
+          padding: 13px 0 0px 0px;
+        }
+      }
+      &-bot {
+        p {
+          font-size: 12.9587px;
+          line-height: 17px;
+          padding: 7px;
+        }
+        &_box {
+          padding-left: 15px;
+        }
+      }
+      .main-content-hide {
+        padding-top: 200px;
+        padding-left: 70px;
+        max-width: 70%;
+      }
+    }
+    .main-content-wrapper {
+      order: -1;
+      padding: 0;
+      width: 100%;
+      margin: 0;
+      text-align: center;
+
+      &__title {
+        padding: 0;
+        margin: 0;
+        &__title-top {
+        }
+      }
+      &__subtitle {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+  }
+}
+
 .main-started {
   background-image: url(/img/bg-phone.svg);
   min-height: 100vh;
