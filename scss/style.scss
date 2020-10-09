@@ -299,7 +299,7 @@ main {
       width: 100%;
       min-height: 360px;
       background: linear-gradient(270deg, #ffffff 5.16%, rgba(255, 255, 255, 0) 67.14%),
-        url(/img/basket.png) 0% 50% no-repeat;
+        url(/img/phone/basket.jpg) 0% 50% no-repeat;
       background-size: 80% 100%;
       margin: 0;
       &-top {
@@ -512,6 +512,45 @@ main {
   }
 }
 
+@media (max-width: $screen-sm-max) {
+  .features {
+    background: #ffffff;
+    height: auto;
+    &-title {
+      color: #000000;
+      text-align: center;
+      padding-left: 3px;
+    }
+    &-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      &-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 86.38%;
+
+        &-icon {
+          svg {
+            path {
+              fill: #00adee;
+            }
+          }
+        }
+        &-text {
+          P {
+            text-align: center;
+            color: #4f4f4f;
+          }
+        }
+      }
+    }
+  }
+}
+
 .comment {
   width: 100%;
   min-height: 431px;
@@ -532,7 +571,9 @@ main {
     &_left {
       margin-right: 36px;
     }
-    &_block {
+    &_block,
+    .comment-box_block1,
+    .comment-box_block3 {
       width: 309px;
       height: 161px;
       background: #ffffff;
@@ -585,6 +626,42 @@ main {
     padding-top: 40px;
     display: block;
     margin: auto;
+  }
+}
+@media (max-width: $screen-sm-max) {
+  .comment {
+    &-tittle {
+    }
+    &-box {
+      display: contents;
+      &_left {
+        display: none;
+      }
+      &_block1,
+      &_block3 {
+        display: none;
+
+        &-top {
+          &-twiter {
+          }
+        }
+        &-text::before {
+          display: none;
+        }
+      }
+      &_block {
+        width: 309px;
+        height: 161px;
+        margin: auto;
+      }
+      .comment-box_block-text::before {
+        display: none;
+      }
+      &::after {
+        right: 0;
+        margin-top: -30%;
+      }
+    }
   }
 }
 
