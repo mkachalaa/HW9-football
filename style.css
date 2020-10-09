@@ -427,7 +427,7 @@ main {
 }
 .features {
   background: #00adee;
-  background-image: url(/img/bg-blu.png);
+  background-image: url(./img/bg-blu.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
