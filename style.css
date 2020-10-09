@@ -315,6 +315,7 @@ main {
     width: 100%;
     margin: 0;
     text-align: center;
+    padding-bottom: 50px;
   }
   .main-video .main-content-wrapper__title {
     padding: 0;
@@ -398,7 +399,6 @@ main {
     padding: 0;
     margin: 0;
     width: 100%;
-    padding-bottom: 50px;
   }
   .main-started .main-content-wrapper_subtitle p {
     margin-left: 10px;
