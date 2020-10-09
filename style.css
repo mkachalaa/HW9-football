@@ -226,6 +226,7 @@ main {
 .main-video .main-content .main-content-hide {
   padding-top: 280px;
   padding-left: 106px;
+  max-width: 100%;
 }
 .main-video .main-content-wrapper {
   width: 33%;
