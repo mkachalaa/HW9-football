@@ -590,8 +590,8 @@ main {
     display: none;
   }
   .comment-box_block {
-    width: 309px;
-    height: 161px;
+    width: 261px;
+    height: 149px;
     margin: auto;
   }
   .comment-box .comment-box_block-text::before {
