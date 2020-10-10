@@ -580,6 +580,9 @@ main {
   .comment-box_left {
     display: none;
   }
+  .comment-box_rigth {
+    display: none;
+  }
   .comment-box_block1, .comment-box_block3 {
     display: none;
   }
